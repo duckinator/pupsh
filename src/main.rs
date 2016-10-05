@@ -2,8 +2,8 @@ fn parse_line(string: String) -> Vec<String> {
     let mut tokens = Vec::new();
 
     println!("{}", string);
-    tokens.push("echo");
-    tokens.push("hello, world!");
+    tokens.push(String::from("echo"));
+    tokens.push(String::from("hello, world!"));
 
     tokens
 }
