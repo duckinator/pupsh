@@ -1,0 +1,6 @@
+[package]
+name = "pupsh"
+version = "0.1.0"
+authors = ["Ellen Marie Dash <me@duckie.co>"]
+
+[dependencies]
