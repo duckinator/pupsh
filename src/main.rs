@@ -1,13 +1,8 @@
 use std::io::{self, Write};
 
 fn parse_line(string: String) -> Vec<String> {
-    let mut tokens = Vec::new();
-
-    println!("{}", string);
-    tokens.push(String::from("echo"));
-    tokens.push(String::from("hello, world!"));
-
-    tokens
+    // TODO: Implement a proper parser. Maybe us nom?
+    string.split_whitespace().map(String::from).collect()
 }
 
 fn execute_line(parts: Vec<String>) {
