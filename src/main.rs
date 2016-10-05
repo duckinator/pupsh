@@ -9,8 +9,8 @@ fn parse_line(string: String) -> Vec<String> {
 }
 
 fn execute_line(parts: Vec<String>) {
-    let command = parts[0];
-    let args    = &parts[1..-1];
+    let ref command = parts[0];
+    let ref args    = &parts[1..];
 
     print!("{} {:?}", command, args);
 }
