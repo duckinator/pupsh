@@ -3,7 +3,7 @@
 A shell for pups, written in Rust.
 
 Inspired by [a few Tweets from
-@\b0rk](https://twitter.com/b0rk/status/78399326345609218).
+@b0rk](https://twitter.com/b0rk/status/78399326345609218).
 
 # Installation
 
