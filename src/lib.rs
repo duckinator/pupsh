@@ -1,5 +1,3 @@
-use std::io::{self, Write};
-
 pub fn parse_line(string: String) -> Vec<String> {
     // TODO: Implement a proper parser. Maybe use nom?
     string.split_whitespace().map(String::from).collect()
