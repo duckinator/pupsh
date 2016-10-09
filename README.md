@@ -17,7 +17,7 @@ Run `pupsh`. Or change your shell to pupsh (with chsh), then open a new terminal
 
 Requires a working Rust toolchain, namely `rustc` and `cargo`.
 After checking out the repo, run `cargo build` to install dependencies
-and build it.
+and build it. To use it, run `./target/debug/pupsh` from the root of the repo.
 
 TODO: Running tests? (Requires actually having tests.) Actual installation?
 
