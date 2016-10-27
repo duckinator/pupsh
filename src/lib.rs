@@ -13,7 +13,7 @@ pub fn split_if_not_in_string(string: String, delimiter: char) -> Vec<String> {
             if chr == delimiter {
                 parts.push(part.clone());
 
-                let mut part = "";
+                let mut part = String::new();
 
                 continue;
             }
@@ -29,6 +29,8 @@ pub fn split_if_not_in_string(string: String, delimiter: char) -> Vec<String> {
                 }
             }
         }
+
+        let last_chr = Some(chr);
     }
 
     parts
