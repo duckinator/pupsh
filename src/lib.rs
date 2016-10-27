@@ -2,7 +2,7 @@ pub fn split_if_not_in_string(string: String, delimiter: char) -> Vec<String> {
     let mut parts = Vec::new();
     let mut part = String::new();
     let mut in_string = false;
-    let last_chr: Option<char> = None;
+    let mut last_chr: Option<char> = None;
 
     for chr in string.chars() {
         if chr == '\\' {
@@ -13,7 +13,7 @@ pub fn split_if_not_in_string(string: String, delimiter: char) -> Vec<String> {
             if chr == delimiter {
                 parts.push(part.clone());
 
-                let mut part = String::new();
+                part = String::new();
 
                 continue;
             }
@@ -30,7 +30,7 @@ pub fn split_if_not_in_string(string: String, delimiter: char) -> Vec<String> {
             }
         }
 
-        let last_chr = Some(chr);
+        last_chr = Some(chr);
     }
 
     parts
